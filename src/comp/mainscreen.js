@@ -14,7 +14,7 @@ const Wtapp = () => {
   const getweatherinfo = async () => {
     setLoading(true);
     try {
-      let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchval}&units=metric&appid=218eeb326c8318bd26b235d0cb142583`;
+      let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchval}&units=metric&appid={Yourkeyhere}`;//paste your key api in url
       const res = await fetch(url);
       const data = await res.json();
       console.log(data);

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mainsec {
+  height: 100%;
+}
+.Hotbg {
+  display: flex;
+  align-items: center;
+  transform: translate(0%, -50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.maincard {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.76),
+    0 0 40px rgba(255, 213, 213, 0.74);
+}
+.Hotbg:hover > .Hotbg-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.Hotbg:hover > .Hotbg-btn {
+  background: azure;
+  color: black;
+}
+i {
+  font-size: xx-large;
+}
+
+.Hotbg-btn {
+  color: #e84118;
+  float: right;
+  /* width: 40px;
+  height: 40px; */
+  border-radius: 20%/50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  color: azure;
+  cursor: pointer;
+}
+
+.Hotbg-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: azure;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  font-weight: bold;
+}
+@media screen and (max-height: 540px) {
+  .mainsec {
+    height: auto !important;
+  }
+}
